@@ -1,0 +1,16 @@
+PODS:
+  - SteviaLayout (4.5.0)
+
+DEPENDENCIES:
+  - SteviaLayout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SteviaLayout
+
+SPEC CHECKSUMS:
+  SteviaLayout: aa64a62810544348c9e328a6521cb9160fa82ec6
+
+PODFILE CHECKSUM: e5284b014534bc43c7ea30cdb98faf74783c6d5a
+
+COCOAPODS: 1.6.1
