@@ -40,6 +40,11 @@ enum HomeViewIdentifiers: String {
     case homeView_username
     case homeView_description
     case homeView_rightButton
+    case homeView_name
+}
+
+enum LikesViewIdentifier: String {
+    case likesView_email
 }
 
 enum TitleSubtitleCellIdentifiers: String {

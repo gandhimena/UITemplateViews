@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Stevia
 
 extension UIViews {
     static var favoriteViewCellBody: UIView {

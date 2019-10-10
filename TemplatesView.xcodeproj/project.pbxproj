@@ -17,6 +17,13 @@
 		981441402346E733001B36D4 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814413F2346E733001B36D4 /* LikesView.swift */; };
 		981441422346E75A001B36D4 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981441412346E75A001B36D4 /* FavoritesView.swift */; };
 		981441442346E79F001B36D4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981441432346E79F001B36D4 /* HomeView.swift */; };
+		98722D57234F014D00874135 /* ManagerGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98722D56234F014D00874135 /* ManagerGeneric.swift */; };
+		98722D59234F015D00874135 /* ParserGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98722D58234F015D00874135 /* ParserGeneric.swift */; };
+		98722D5F234F06D500874135 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98722D5E234F06D500874135 /* JSONDecoder+Extension.swift */; };
+		98722D63234F071200874135 /* TabBarRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98722D62234F071200874135 /* TabBarRemoteDataManager.swift */; };
+		98722D65234F09E800874135 /* TabBarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98722D64234F09E800874135 /* TabBarInfo.swift */; };
+		988F70BC234D707C003C953D /* LikesViewBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F70BB234D707C003C953D /* LikesViewBody.swift */; };
+		988F70BE234D7919003C953D /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988F70BD234D7919003C953D /* test.storyboard */; };
 		98A5CB6B233C1E72002325DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5CB6A233C1E72002325DC /* AppDelegate.swift */; };
 		98A5CB6D233C1E72002325DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5CB6C233C1E72002325DC /* SceneDelegate.swift */; };
 		98A5CB6F233C1E72002325DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5CB6E233C1E72002325DC /* ViewController.swift */; };
@@ -68,6 +75,13 @@
 		9814413F2346E733001B36D4 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
 		981441412346E75A001B36D4 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		981441432346E79F001B36D4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		98722D56234F014D00874135 /* ManagerGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerGeneric.swift; sourceTree = "<group>"; };
+		98722D58234F015D00874135 /* ParserGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserGeneric.swift; sourceTree = "<group>"; };
+		98722D5E234F06D500874135 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
+		98722D62234F071200874135 /* TabBarRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRemoteDataManager.swift; sourceTree = "<group>"; };
+		98722D64234F09E800874135 /* TabBarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInfo.swift; sourceTree = "<group>"; };
+		988F70BB234D707C003C953D /* LikesViewBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewBody.swift; sourceTree = "<group>"; };
+		988F70BD234D7919003C953D /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		98A5CB67233C1E72002325DC /* TemplatesView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplatesView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A5CB6A233C1E72002325DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98A5CB6C233C1E72002325DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,8 +205,9 @@
 		9814413B2346E6C9001B36D4 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				988F70B7234D3B18003C953D /* Body */,
+				988F70BD234D7919003C953D /* test.storyboard */,
 				9814413F2346E733001B36D4 /* LikesView.swift */,
+				988F70BA234D7060003C953D /* body */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -205,11 +220,53 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		988F70B7234D3B18003C953D /* Body */ = {
+		98722D53234F011D00874135 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				98722D54234F012900874135 /* Manager */,
+				98722D55234F013100874135 /* Parser */,
 			);
-			path = Body;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		98722D54234F012900874135 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				98722D56234F014D00874135 /* ManagerGeneric.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		98722D55234F013100874135 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				98722D58234F015D00874135 /* ParserGeneric.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		98722D60234F06F900874135 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				98722D61234F070000874135 /* Remote */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		98722D61234F070000874135 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				98722D62234F071200874135 /* TabBarRemoteDataManager.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		988F70BA234D7060003C953D /* body */ = {
+			isa = PBXGroup;
+			children = (
+				988F70BB234D707C003C953D /* LikesViewBody.swift */,
+			);
+			path = body;
 			sourceTree = "<group>";
 		};
 		98A5CB5E233C1E72002325DC = {
@@ -233,6 +290,7 @@
 		98A5CB69233C1E72002325DC /* TemplatesView */ = {
 			isa = PBXGroup;
 			children = (
+				98722D53234F011D00874135 /* Network */,
 				98DD0D5D234D279A0024110B /* Entities */,
 				98123521234A6C8A0040927A /* MockList */,
 				98A5CB82233C3D00002325DC /* Modules */,
@@ -309,6 +367,7 @@
 				98123516234A3A9E0040927A /* UIView+Extension.swift */,
 				9812351F234A5BA00040927A /* UIButton+Extension.swift */,
 				98D6DC3D234C563C00E8391F /* CGFloat+Extension.swift */,
+				98722D5E234F06D500874135 /* JSONDecoder+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -343,6 +402,7 @@
 		98B350A4234586C800E7F33B /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				98722D60234F06F900874135 /* DataManager */,
 				98B350C02345AA2100E7F33B /* Protocols */,
 				98B350BF2345A92200E7F33B /* interactor */,
 				98B350BE2345A91B00E7F33B /* presenter */,
@@ -439,6 +499,7 @@
 			children = (
 				98ABAF0A234704C1004C87A1 /* User.swift */,
 				98D6DC34234C452100E8391F /* HotelInfo.swift */,
+				98722D64234F09E800874135 /* TabBarInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -526,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98A5CB74233C1E73002325DC /* Assets.xcassets in Resources */,
+				988F70BE234D7919003C953D /* test.storyboard in Resources */,
 				98ABAF022346FB64004C87A1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +651,8 @@
 				98B350C22345AA3100E7F33B /* TabBarProtocols.swift in Sources */,
 				98B350C62345AB5900E7F33B /* TabBarView.swift in Sources */,
 				98A5CB6F233C1E72002325DC /* ViewController.swift in Sources */,
+				98722D5F234F06D500874135 /* JSONDecoder+Extension.swift in Sources */,
+				98722D57234F014D00874135 /* ManagerGeneric.swift in Sources */,
 				98B350C42345AB0900E7F33B /* TabBarRouter.swift in Sources */,
 				9812351E234A57DC0040927A /* FavoriteViewBody.swift in Sources */,
 				98D6DC3A234C53D700E8391F /* FavoriteDetailsView.swift in Sources */,
@@ -602,7 +666,10 @@
 				98ABAF0623470436004C87A1 /* HomaViewCell.swift in Sources */,
 				98A5CB87233C89FB002325DC /* UIImage+Extension.swift in Sources */,
 				98B350CD2345BEFA00E7F33B /* NavTitleView.swift in Sources */,
+				98722D65234F09E800874135 /* TabBarInfo.swift in Sources */,
 				98A5CB94233F3E30002325DC /* UITextFieldTemplate.swift in Sources */,
+				98722D63234F071200874135 /* TabBarRemoteDataManager.swift in Sources */,
+				98722D59234F015D00874135 /* ParserGeneric.swift in Sources */,
 				98D6DC35234C452100E8391F /* HotelInfo.swift in Sources */,
 				98A5CBA423411A98002325DC /* UILabelTemplate.swift in Sources */,
 				98B350AB234587EC00E7F33B /* GenericTableViewCell.swift in Sources */,
@@ -619,6 +686,7 @@
 				98A5CB6D233C1E72002325DC /* SceneDelegate.swift in Sources */,
 				98123517234A3A9E0040927A /* UIView+Extension.swift in Sources */,
 				981441442346E79F001B36D4 /* HomeView.swift in Sources */,
+				988F70BC234D707C003C953D /* LikesViewBody.swift in Sources */,
 				98A5CB89233C8C17002325DC /* Constants.swift in Sources */,
 				981441422346E75A001B36D4 /* FavoritesView.swift in Sources */,
 				98ABAF0B234704C1004C87A1 /* User.swift in Sources */,

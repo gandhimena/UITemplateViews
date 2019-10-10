@@ -29,4 +29,6 @@ class FavoritesView: BaseTableViewController<FavoriteViewCell, HotelInfo> {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 170
     }
+    
+    
 }

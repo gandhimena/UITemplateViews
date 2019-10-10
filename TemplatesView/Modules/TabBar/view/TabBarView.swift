@@ -27,7 +27,7 @@ class TabBarView: UITabBarController {
         super.viewDidLoad()
         self.delegate = self
         navTitleViewImage(.template_logo)
-        navBarBackgroundGradient(colors: [.blue, .cyan], position: .leftToRight)
+        navBarBackgroundGradient(colors: [.blue, .cyan], position: .diagonalLeft)
         
     }
     

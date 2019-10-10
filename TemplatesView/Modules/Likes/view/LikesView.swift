@@ -10,5 +10,16 @@ import UIKit
 
 class LikesView: UIViewController {
     
+    let body = UIViews.likesViewbody
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        
+        view.addSubview(body)
+        body.left(0).top(0).right(0).bottom(0)
+        
+    }
     
 }

@@ -16,7 +16,7 @@ extension TabBarView:UITabBarControllerDelegate {
         case is FavoritesView:
             navTitleViewText("Favorites", "subtitle")
         case is LikesView:
-            navTitleViewText("Likes", "the great place to be")
+            navTitleViewText("Likes Fot you", nil)
         case is NotifView:
             navTitleViewText("Notifications", nil)
         case is ProfileView:

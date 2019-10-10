@@ -14,7 +14,7 @@ extension UIViews {
     static var homeViewCellBody: UIView {
         let mainContainer = viewContainer
         
-        let userImage = UIImageViews.default_image.style { $0.image = UIImage.Icons.name(.user_image)}
+        let userImage = UIImageViews.default_WithImage(.user_image)
 //        let username = UILabels.defaultsWithAlignment(.left).style { $0.textColor = .gray }
         let titleSubTitleView = titleAndSubstitleView
         let buttonRight = UIButtons.buttonImage(.custom, .tabBar_star)

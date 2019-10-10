@@ -12,14 +12,15 @@ class HomeViewCell: BaseTableViewCell<User> {
     
     let body = UIViews.homeViewCellBody
     
-    var userImager: UIImageView? { return body.viewWithTag(.homeView_userImage) as? UIImageView }
+    var userImage: UIImageView? { return body.viewWithTag(.homeView_userImage) as? UIImageView }
     var username: UILabel? { return body.viewWithTag(.homeView_username) as? UILabel }
     var subtitle: UILabel? { return body.viewWithTag(.homeView_description) as? UILabel }
     var buttonRight: UIButton? { return body.viewWithTag(.homeView_rightButton) as? UIButton }
+    var name: UILabel? { return body.viewWithTag(.homeView_name) as? UILabel }
     
     override var item: User! {
         didSet {
-            userImager?.image = self.item.image
+            userImage?.image = self.item.image
             username?.text = self.item.name
             subtitle?.text = "subtitle"
         }
