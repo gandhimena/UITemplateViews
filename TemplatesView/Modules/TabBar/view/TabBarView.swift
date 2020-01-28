@@ -11,16 +11,18 @@ import UIKit
 class TabBarView: UITabBarController {
     var presenter: TabBarViewPresenterProtocol?
     
-    let tabBarImages = [ UIImage.Icons.name(.tabBar_home),
-                         UIImage.Icons.name(.star_empty),
-                         UIImage.Icons.name(.tabBar_heart),
-                         UIImage.Icons.name(.tabBar_notif_bell),
-                         UIImage.Icons.name(.tabBar_profile)
+    let tabBarImages = [
+        UIImage.Icons.name(.tabBar_home),
+        UIImage.Icons.name(.star_empty),
+        UIImage.Icons.name(.tabBar_heart),
+        UIImage.Icons.name(.tabBar_notif_bell),
+        UIImage.Icons.name(.tabBar_profile)
     ]
     
-    let myControllers = [HomeView(),
-                        FavoritesView(),
-                        LikesView()
+    let myControllers = [
+        HomeView(),
+        FavoritesView(),
+        LikesView()
     ]
     
     override func viewDidLoad() {
